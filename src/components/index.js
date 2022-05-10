@@ -1,0 +1,7 @@
+export { default as Home } from './Home/home.jsx'
+export { default as Projects } from './Projects/project.jsx'
+export { default as AboutMe } from './AboutMe/aboutme.jsx'
+export { default as Contact } from './Contact/contact.jsx'
+export { default as Navbar } from './Navbar/navbar.jsx'
+export { default as SingleProject } from './Project_single/project_s.jsx'
+export { default as Body } from './Body/body.jsx'

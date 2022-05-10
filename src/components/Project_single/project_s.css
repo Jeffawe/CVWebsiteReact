@@ -1,0 +1,136 @@
+.website-project {
+    display: flex;
+}
+
+
+.website-project_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    cursor: pointer;
+    transition: transform .3s;
+    border-radius: 3px;
+}
+
+.website-project_card:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border:  1px solid blue;
+
+}
+
+.website-project_card-image img{
+    position: relative;
+    width: 378px;
+    height: 498px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    filter: opacity(50%);
+}
+
+.website-project_card-text {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.website-project_card-text p {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-size: 40px;
+    max-width: 22rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.website-project_card-imageSlideShow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: myslideshow 5s linear infinite 0s forwards;
+    animation-play-state: paused;
+}
+
+.website-project_card-imageSlideShow:hover img {
+    animation-play-state: running;
+}
+
+@keyframes myslideshow {
+    0% { visibility: visible; z-index: 100; }
+	12.5% { visibility: visible; z-index: 100; }
+	25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+.website-project_card-imageSlideShow img:nth-child(1){
+	z-index: 9;
+}
+
+.website-project_card-imageSlideShow img:nth-child(2){
+	animation-delay: 0.1s;
+	z-index: 8;
+}
+
+.website-project_card-imageSlideShow img:nth-child(3){
+	animation-delay: 0.2s;
+	z-index: 7;
+}
+.website-project_card-imageSlideShow img:nth-child(4){
+	animation-delay: 0.3s;
+	z-index: 6;
+}
+
+@media screen and (max-width: 1025px) {
+    .website-project {
+        padding: 2rem 2rem;
+    }
+
+    .website-project_card-text p {
+        font-size: 25px;
+    }
+
+    .website-project_card-image img{
+        width: 220px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .website-project_card-image img{
+        width: 378px;
+        height: 498px;
+    }
+
+    .website-project_card-text p {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .website-project {
+        padding: 2rem 2rem;
+    }
+
+    .website-project_card-text p {
+        font-size: 25px;
+    }
+
+    .website-project_card-image img{
+        width: 220px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+
+
+} 

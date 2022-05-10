@@ -1,0 +1,137 @@
+.website-aboutme {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 2rem 6rem;
+}
+
+.website-aboutme_left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.website-aboutme_right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 10rem 0rem;
+}
+
+.website-aboutme_right img {
+    width: 600px;
+    height: 450px;
+}
+
+.website-aboutme_left-header h1{
+    font-family: var(--font-family);
+    color: var(--color-text);
+
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 100px;
+    padding: 3rem 0rem;
+
+}
+
+.website-aboutme_left-text p{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 20px;
+
+    line-height: 50px;
+}
+
+@media screen and (max-width: 1700px) {
+
+}
+
+@media screen and (max-width: 1215px) {
+    .website-aboutme {
+        padding: 2rem 4rem;
+    }
+
+    .website-aboutme_right {
+        padding: 18rem 0rem;
+        width: 100%;
+    }
+
+    .website-aboutme_left {
+        width: 100%;
+    }
+    
+    .website-aboutme_right img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .website-aboutme {
+        flex-direction: column;
+    }
+
+    .website-aboutme_left {
+        padding: 0rem 0rem;
+    }
+
+    .website-aboutme_left-header h1 {
+        text-align: center;
+    }
+
+    .website-aboutme_left-text p {
+        text-align: center;
+    }
+
+    .website-aboutme_left {
+        width: 100%;
+    }
+    
+    .website-aboutme_right {
+        width: 100%;
+        padding: 8rem 0rem;
+    }
+    
+    .website-aboutme_right img {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .website-aboutme_left-header h1 {
+        font-size: 80px;
+    }
+
+    .website-aboutme_right {
+        padding: 8rem 0rem;
+    }
+
+    .website-aboutme_right img {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .website-aboutme_right {
+        padding: 5rem 0rem;
+    }
+
+    .website-aboutme_right img {
+        width: 240px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .website-aboutme_right {
+        padding: 5rem 0rem;
+    }
+
+    .website-aboutme_right img {
+        width: 200px;
+        height: 150px;
+    }
+}
