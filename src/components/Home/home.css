@@ -60,12 +60,17 @@
 
 @media screen and (max-width: 500px) {
     .website-home_button button {
-        font-size: 18px;
-        padding: 1rem 3rem;
+        font-size: 15px;
+        padding: 0.5rem 2rem;
+    }
+
+    .website-home_image img {
+        width: 80px;
+        height: 80px;
     }
 
     .website-home_text h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 

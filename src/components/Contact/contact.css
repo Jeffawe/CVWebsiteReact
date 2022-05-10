@@ -74,20 +74,25 @@
     }
 
     .website-contact-bottomitems-icons {
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        gap: 30px;
+    }
+
+    .website-contact-icon {
+        padding: 0rem 0rem 0rem 0rem;
     }
 
     .website-contact-text-header h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .website-contact-text-other p {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .website-contact-bottomitems-bottomleft p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
