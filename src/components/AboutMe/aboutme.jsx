@@ -9,7 +9,7 @@ const aboutme = () => {
     <div className='website-aboutme' id='#aboutme'>
       <div className='website-aboutme_left'>
         <div className='website-aboutme_left-header'>
-          <h1>About Me</h1>
+          <h1 className='mobile-disapear'>About Me</h1>
         </div>
 
         <div className='website-aboutme_left-text'>
@@ -22,6 +22,12 @@ const aboutme = () => {
 
       <div className='website-aboutme_right'>
         <img src={ Me } alt='my_profile_pic'/>
+      </div>
+
+      <div className='website-aboutme-mobile-text'>
+        <div className='website-aboutme_left-header'>
+          <h1>About Me</h1>
+        </div>
       </div>
     </div>
   )

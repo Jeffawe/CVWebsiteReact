@@ -5,6 +5,10 @@
     padding: 2rem 6rem;
 }
 
+.website-aboutme-mobile-text{
+    display: none;
+}
+
 .website-aboutme_left {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,7 @@
 }
 
 .website-aboutme_right img {
+    border-radius: 5rem;
     width: 600px;
     height: 450px;
 }
@@ -31,7 +36,6 @@
     font-size: 100px;
     line-height: 100px;
     padding: 3rem 0rem;
-
 }
 
 .website-aboutme_left-text p{
@@ -69,7 +73,18 @@
 
 @media screen and (max-width: 800px) {
     .website-aboutme {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .website-aboutme-mobile-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 0rem 0rem 0rem;
+    }
+
+    .mobile-disapear{
+        display: none;
     }
 
     .website-aboutme_left {
@@ -89,8 +104,11 @@
     }
     
     .website-aboutme_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 8rem 0rem;
+        padding: 1rem 0rem;
     }
     
     .website-aboutme_right img {
@@ -100,12 +118,17 @@
 }
 
 @media screen and (max-width: 500px) {
+    .website-aboutme-mobile-text{
+        padding: 5rem 0rem 0rem 0rem;
+    }
+
     .website-aboutme_left-header h1 {
-        font-size: 40px;
+        font-size: 60px;
+        padding: 0rem;
     }
 
     .website-aboutme_right {
-        padding: 8rem 0rem;
+        padding: 1rem 0rem;
     }
 
     .website-aboutme_right img {
@@ -120,18 +143,26 @@
 
 @media screen and (max-width: 380px) {
     .website-aboutme_right {
-        padding: 5rem 0rem;
+        padding: 0rem 0rem;
     }
 
     .website-aboutme_right img {
         width: 240px;
         height: 180px;
     }
+
+    .website-aboutme_left-header h1 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 330px) {
     .website-aboutme_right {
-        padding: 5rem 0rem;
+        padding: 1rem 0rem;
+    }
+
+    .website-aboutme_left-header h1 {
+        line-height: 60px;
     }
 
     .website-aboutme_right img {

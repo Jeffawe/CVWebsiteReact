@@ -4,7 +4,6 @@ import './contact.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 
 
 const contact = () => {
@@ -28,7 +27,7 @@ const contact = () => {
 
         <div className='website-contact-bottomitems-icons'>
           <div className='website-contact-icon'>
-            <a href=''><FaFacebookF color='white' size={30}/></a>
+            <a href='https://web.facebook.com/profile.php?id=100011658587747'><FaFacebookF color='white' size={30}/></a>
           </div>
 
           <div className='website-contact-icon'>

@@ -37,8 +37,6 @@
     background-color: transparent;
     padding: 1rem 4rem;
     cursor: pointer;
-
-    font-weight: bold;
 }
 
 @media screen and (max-width: 1215px) {
@@ -70,10 +68,12 @@
     }
 
     .website-home_text h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
 
-@media screen and (max-width: 350px) {
-
+@media screen and (max-width: 380px) {
+    .website-home_text h1 {
+        font-size: 50px;
+    }
 }

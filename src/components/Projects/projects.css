@@ -48,6 +48,10 @@
 
 
 @media screen and (max-width: 800px) {
+    .website-projects {
+        padding: 10rem 6rem 2rem 6rem;
+    }
+
     .website-projects-containers {
         flex-direction: column;
         justify-content: center;
@@ -55,18 +59,30 @@
     }
 
     .website-projects-containers-single {
-        padding: 3rem 0rem;
+        padding: 1rem 0rem;
     }
 }
 
 @media screen and (max-width: 500px) {
     .website-projects {
-        padding: 0rem 2rem;
+        padding: 5rem 2rem 0rem 2rem;
     }
 
     .website-projects-title h1{
-        font-size: 40px;
+        font-size: 60px;
         text-align: center;
+        padding: 0rem 0rem 2rem 0rem;
+
+    }
+
+    .website-projects-containers-single {
+        padding: 0rem 0rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .website-projects-title h1{
+        font-size: 50px;
 
     }
 }
